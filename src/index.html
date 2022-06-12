@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{ "title":"Главная" })
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<!-- INTRO -->
+				<section class="intro">
+					<div class="intro__container">
+						<div class="intro__inner">
+							<div class="intro__left">
+								<h2 class="intro__title">New collection</h2>
+								<div class="intro__card">
+									<img src="@img/intro-1.jpg" alt="" />
+									<a href="./catalog.html" class="intro__btn btn">Каталог <i class="_icon-arrow-right-btn"></i></a>
+								</div>
+							</div>
+							<h2 class="intro__subtitle">Castomes oversize</h2>
+							<div class="intro__right">
+								<img src="@img/intro-2.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- INTRO END -->
+				<!-- SLIDER -->
+				@@include('html/slider.htm',{})
+				<!-- SLIDER END -->
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
