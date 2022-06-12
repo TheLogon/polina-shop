@@ -50,9 +50,9 @@ function initSliders() {
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Navigation, Autoplay],
-			effect: "fade",
+			// effect: "fade",
 			autoplay: {
-				delay: 5000,
+				delay: 3000,
 				disableOnInteraction: false,
 			},
 			observer: true,
@@ -61,7 +61,7 @@ function initSliders() {
 			centeredSlides: true,
 			spaceBetween: 30,
 			autoHeight: true,
-			speed: 500,
+			speed: 800,
 			//touchRatio: 0,
 			//simulateTouch: false,
 			loop: true,

@@ -1,8 +1,8 @@
 {
-	"name": "fls-start",
+	"name": "demin-start",
 	"version": "1.0.0",
 	"description": "Start template with Gulp and Webpack",
-	"author": "FLS",
+	"author": "Kirill Demin",
 	"private": true,
 	"license": "GNU General Public License (GPL)",
 	"type": "module",

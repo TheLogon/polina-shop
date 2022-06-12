@@ -140,7 +140,6 @@
 	display: flex;
 	flex-direction: column;
 	padding: 23px;
-	width: fit-content;
 
 	// .card-product__img
 
@@ -229,4 +228,40 @@
 		right: 0;
 		cursor: pointer;
 	}
+}
+
+// Banner
+
+.banner {
+	margin-bottom: 70px;
+	// .banner__inner
+
+	&__inner {
+		background-color: #e0d5cf;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .banner__left
+
+	&__left {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		row-gap: 21px;
+	}
+
+	// .banner__title
+
+	&__title {
+	}
+
+	// .banner__img
+
+	&__img {
+	}
+}
+.banner-btn {
 }

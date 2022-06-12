@@ -2,6 +2,7 @@
 .btn {
 	background-color: $bgBtn;
 	color: #fff;
+	line-height: math.div(22, 16);
 	display: flex;
 	align-items: center;
 	column-gap: 10px;
