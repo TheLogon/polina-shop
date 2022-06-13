@@ -240,6 +240,12 @@
 		background-color: #e0d5cf;
 		display: flex;
 		justify-content: space-between;
+		column-gap: 15px;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			row-gap: 30px;
+			padding-top: 30px;
+		}
 	}
 
 	// .banner__left
@@ -256,12 +262,22 @@
 	// .banner__title
 
 	&__title {
+		text-align: center;
 	}
 
 	// .banner__img
 
 	&__img {
+		img,
+		picture {
+			object-fit: cover;
+			object-position: center;
+			max-width: 573px;
+			max-height: 243px;
+			@media (max-width: $mobile) {
+				max-width: 100%;
+				width: 100%;
+			}
+		}
 	}
-}
-.banner-btn {
 }

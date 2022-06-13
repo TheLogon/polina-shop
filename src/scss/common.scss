@@ -35,8 +35,8 @@ h3 {
 }
 
 [class*="__container"] {
-	border-left: 1px solid red;
-	border-right: 1px solid red;
+	// border-left: 1px solid red;
+	// border-right: 1px solid red;
 	@media (max-width: $pc) {
 		padding: 0 20px;
 	}

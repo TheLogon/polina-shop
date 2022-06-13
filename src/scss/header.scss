@@ -163,6 +163,11 @@
 		display: flex;
 		align-items: center;
 		column-gap: 5px;
+		transition: color 0.4s ease-in-out;
+		&:hover {
+			color: $hoverText;
+			transition: color 0.4s ease-in-out;
+		}
 		@media (max-width: $mobile) {
 			font-weight: 700;
 			font-size: rem(18);

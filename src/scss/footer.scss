@@ -1,3 +1,91 @@
 //====================================================================================================
-
+// Footer
 //====================================================================================================
+
+.footer {
+	padding: 86px 0;
+	background-color: #f2f2f2;
+	// .footer__inner
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		column-gap: 15px;
+		@media (max-width: 666px) {
+			row-gap: 40px;
+			flex-direction: column;
+			align-content: center;
+			flex-wrap: wrap;
+		}
+	}
+
+	// .footer__wrapper
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	// .footer__logo
+
+	&__logo {
+	}
+
+	// .footer__nav
+
+	&__nav {
+		display: flex;
+		flex-direction: column;
+		row-gap: 16px;
+	}
+
+	// .footer__title
+
+	&__title {
+		font-weight: 700;
+		font-size: rem(16);
+		line-height: math.div(22, 16);
+	}
+
+	// .footer__link
+
+	&__link {
+		transition: color 0.4s ease-in-out;
+		&:hover {
+			color: $hoverText;
+			transition: color 0.4s ease-in-out;
+		}
+	}
+
+	// .footer__contacts
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		row-gap: 16px;
+	}
+
+	// .footer__data
+
+	&__data {
+	}
+
+	// .footer__number
+
+	&__number {
+		font-weight: 700;
+		font-size: rem(20);
+		line-height: math.div(27, 20);
+	}
+
+	// .footer__links
+
+	&__links {
+		display: flex;
+		column-gap: 14px;
+		// .footer__links_link
+
+		&_link {
+		}
+	}
+}
