@@ -281,3 +281,80 @@
 		}
 	}
 }
+
+// Catalog
+
+.catalog {
+	// .catalog__top
+
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 18px;
+	}
+
+	// .catalog__title
+
+	&__title {
+	}
+
+	// .catalog__inner
+
+	&__inner {
+		margin-top: 52px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 32px;
+	}
+
+	// .catalog__products
+
+	&__products {
+		display: flex;
+		flex-wrap: wrap;
+		@include adaptiveValue("column-gap", 17, 9);
+		row-gap: 24px;
+		margin-bottom: 36px;
+	}
+}
+.breadcrambs {
+	font-size: rem(12);
+	line-height: math.div(16, 12);
+	color: #000000;
+}
+.filters-catalog {
+	display: flex;
+	align-items: center;
+	column-gap: 30px;
+	margin-top: 80px;
+	// .filters-catalog__title
+
+	&__title {
+		display: flex;
+		align-items: center;
+		column-gap: 9px;
+		p {
+			font-size: rem(16);
+			line-height: math.div(22, 16);
+			color: #000000;
+		}
+		i {
+			font-size: rem(20);
+		}
+	}
+
+	// .filters-catalog__form
+
+	&__form {
+		display: flex;
+		align-items: center;
+		column-gap: 30px;
+	}
+
+	// .filters-catalog__filter
+
+	&__filter {
+	}
+}

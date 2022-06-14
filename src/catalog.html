@@ -56,9 +56,9 @@
 								</div>
 								<div class="filters-catalog__filter">
 									<select name="form[]" class="form filter__select">
-										<option value="1" selected>Популярности</option>
-										<option value="2">Рейтингу</option>
-										<option value="3">Цене</option>
+										<option value="1" selected>Стиль</option>
+										<option value="2">Деловой</option>
+										<option value="3">Модный</option>
 									</select>
 								</div>
 								<div class="filters-catalog__filter">
@@ -66,9 +66,13 @@
 								</div>
 							</form>
 						</div>
-						<div class="catalog__inner"></div>
+						<div class="catalog__inner">
+							<div class="catalog__products">@@include('html/products.htm',{})</div>
+							<button class="btn">Показать еще</button>
+						</div>
 					</div>
 				</section>
+				@@include('html/banner.htm',{})
 			</main>
 			@@include('html/_footer.htm',{})
 		</div>
