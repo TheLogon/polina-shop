@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{ "title":"Главная" })
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="product">
+					<div class="product__container">
+						<div class="product__top top">
+							<div class="breadcrambs"><a href="/">Главная</a> / <a href="catalog.html">Каталог</a> / Платье</div>
+						</div>
+						<div class="product__inner">
+							<div class="product__gallery">
+								<div class="product-zoom">
+									<img class="product-zoom__img" src="img/single-product/1.png" alt="" />
+								</div>
+								<div class="product-thumbs">
+									<div class="product-thumbs__track">
+										<div class="pt active" data-img="img/single-product/1.png"><img src="img/single-product/1.png" alt="" /></div>
+										<div class="pt" data-img="img/single-product/2.png"><img src="img/single-product/2.png" alt="" /></div>
+										<div class="pt" data-img="img/single-product/3.png"><img src="img/single-product/3.png" alt="" /></div>
+										<div class="pt" data-img="img/single-product/4.png"><img src="img/single-product/4.png" alt="" /></div>
+									</div>
+								</div>
+							</div>
+							<div class="product-data">
+								<p class="product-data__article">Артикул: <span>189374</span></p>
+								<p class="product-data__title">Платье италия с цветами</p>
+								<p class="product-data__descr">Описание платья италия с цветами и вырезом короткифывафыве рукава описание платья италия с цветами и вырезом короткие рукава</p>
+								<p class="product-data__price">3 000 ₽</p>
+								<div class="product-data__settings">
+									<div class="product-data__size">
+										<p class="settings__title">Размер</p>
+										<div class="select">
+											<div class="select__header">
+												<span class="select__current">42</span>
+												<div class="select__icon"><i class="_icon-arrow-bottom"></i></div>
+											</div>
+
+											<div class="select__body">
+												<div class="select__item">44</div>
+												<div class="select__item">46</div>
+												<div class="select__item">48</div>
+												<div class="select__item">50</div>
+												<div class="select__item">52</div>
+												<div class="select__item">54</div>
+												<div class="select__item">56</div>
+												<div class="select__item">58</div>
+												<div class="select__item">60</div>
+												<div class="select__item">62</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-data__color">
+										<p class="settings__title">Цвет</p>
+										<div class="product-data__colors">
+											<div class="form_radio">
+												<input id="radio-1" type="radio" name="radio" value="1" checked />
+												<label for="radio-1"></label>
+											</div>
+											<div class="form_radio">
+												<input id="radio-2" type="radio" name="radio" value="2" />
+												<label for="radio-2"></label>
+											</div>
+											<div class="form_radio">
+												<input id="radio-3" type="radio" name="radio" value="3" />
+												<label for="radio-3"></label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-data__btns">
+									<a href="#" class="product-data__btn btn">ДОБАВИТЬ В КОРЗИНУ <i class="_icon-arrow-right-btn"></i></a>
+									<a href="#" class="product-data__btn btn"><i class="_icon-like"></i></a>
+								</div>
+								<div class="product-data__table">
+									<table class="table-product">
+										<tbody>
+											<tr>
+												<td class="table-product__title1">Детали</td>
+												<td class="table-product__title2">Характеристики</td>
+											</tr>
+											<tr class="table-product__body">
+												<td class="table-product__subtitle">Материал:</td>
+												<td class="table-product__descr">Хлопок</td>
+											</tr>
+											<tr>
+												<td class="table-product__subtitle">Стиль:</td>
+												<td class="table-product__descr">Модный</td>
+											</tr>
+											<tr>
+												<td class="table-product__subtitle">Сезон:</td>
+												<td class="table-product__descr">Лето</td>
+											</tr>
+											<tr>
+												<td class="table-product__subtitle">Страна-изговтовитель:</td>
+												<td class="table-product__descr">Италия</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- SLIDER -->
+				@@include('html/slider.htm',{})
+				<!-- SLIDER END -->
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
