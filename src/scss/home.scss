@@ -477,99 +477,121 @@
 	&__settings {
 		display: flex;
 		column-gap: 37px;
+		margin-bottom: 38px;
 	}
 
 	// .product-data__size
 
 	&__size {
+		display: flex;
+		flex-direction: column;
+		row-gap: 9px;
 	}
 
 	// .product-data__color
 
 	&__color {
+		display: flex;
+		flex-direction: column;
+		row-gap: 9px;
 	}
 
 	// .product-data__colors
 
 	&__colors {
+		display: flex;
+		column-gap: 22px;
+		height: 42px;
+		align-items: center;
 	}
 
 	// .product-data__btns
 
 	&__btns {
+		display: flex;
+		column-gap: 28px;
 	}
 
 	// .product-data__btn
 
 	&__btn {
+		padding: 12px 15px;
 	}
 
 	// .product-data__table
 
 	&__table {
+		margin-top: 67px;
 	}
 }
-.settings {
-	// .settings__title
-
-	&__title {
-	}
+.settings__title {
+	font-size: rem(13);
+	line-height: math.div(18, 13);
 }
-.select {
-	// .select__header
 
-	&__header {
-	}
-
-	// .select__current
-
-	&__current {
-	}
-
-	// .select__icon
-
-	&__icon {
-	}
-
-	// .select__body
-
-	&__body {
-	}
-
-	// .select__item
-
-	&__item {
-	}
-}
-.form {
-	// .form_radio
-
-	&_radio {
-	}
-}
 .table-product {
+	tr {
+		&:first-child {
+			height: 59px;
+		}
+	}
+
+	td {
+		vertical-align: top;
+		&:first-child {
+			padding-right: 26px;
+		}
+	}
 	// .table-product__title1
 
 	&__title1 {
+		position: relative;
+		font-weight: 600;
+		font-size: rem(16);
+		line-height: math.div(22, 16);
+		text-transform: uppercase;
+		color: #000000;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 27px;
+			left: 0;
+			border-bottom: 1px solid #000000;
+			width: 62px;
+		}
 	}
 
 	// .table-product__title2
 
 	&__title2 {
+		font-weight: 600;
+		font-size: rem(16);
+		line-height: math.div(22, 16);
+		text-transform: uppercase;
+		color: #535353;
 	}
 
 	// .table-product__body
 
 	&__body {
+		height: 36px;
 	}
 
 	// .table-product__subtitle
 
 	&__subtitle {
+		font-weight: 300;
+		font-size: rem(16);
+		line-height: math.div(19, 16);
+		color: #535353;
 	}
 
 	// .table-product__descr
 
 	&__descr {
+		font-weight: 400;
+		font-size: rem(16);
+		line-height: math.div(19, 16);
+		color: #535353;
 	}
 }

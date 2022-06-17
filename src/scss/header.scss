@@ -117,9 +117,21 @@
 	// .top-nav__link
 
 	&__link {
+		position: relative;
 		i {
 			color: $bgBtn;
 			font-size: rem(21);
+		}
+		.amount {
+			position: absolute;
+			top: -22px;
+			right: -11px;
+			background: #ff6161;
+			border-radius: 107px;
+			padding: 3px 7px;
+			font-size: 0.625rem;
+			line-height: 1.4;
+			color: #ffffff;
 		}
 	}
 }
