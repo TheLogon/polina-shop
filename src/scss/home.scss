@@ -328,7 +328,9 @@
 .filters-catalog {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	column-gap: 30px;
+	row-gap: 30px;
 	margin-top: 80px;
 	// .filters-catalog__title
 
@@ -351,7 +353,9 @@
 	&__form {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 		column-gap: 30px;
+		row-gap: 30px;
 	}
 
 	// .filters-catalog__filter
