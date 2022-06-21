@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{ "title":"Главная" })
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="cart">
+					<div class="cart__container">
+						<div class="cart__inner">
+							<table class="cart-table">
+								<tbody class="cart-table__body">
+									<tr class="cart-table__line">
+										<td class="cart-table__remove">
+											<a href="#" class="cart-table__close"><i class="_icon-close"></i></a>
+										</td>
+										<td class="cart-table__thambnail">
+											<a href="#" class="cart-table__img">
+												<img src="@img/products/1.jpg" alt="" />
+											</a>
+										</td>
+										<td class="cart-table__name">
+											<a href="#" class="cart-table__name_title">Платье италия с цветами</a>
+											<span class="cart-table__size">Размер: 48</span>
+											<span class="cart-table__color">Цвет: Бежевый</span>
+										</td>
+										<td class="cart-table__price">
+											<span class="cart-table__price_text">3 000 ₽</span>
+										</td>
+										<td class="cart-table__quantity">
+											<input type="number" name="quantity" min="1" value="1" id="quantity" class="cart-table__quantity_text" />
+										</td>
+										<td class="cart-table__subtotal">
+											<span class="cart-table__price_text">3 000 ₽</span>
+										</td>
+									</tr>
+									<tr class="cart-table__line">
+										<td colspan="6" class="card-input">
+											<input type="text" class="card-input__cupon" placeholder="Промокод" />
+											<button class="btn">Применить промокод <i class="_icon-arrow-right-btn"></i></button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="cart__data">
+								<div class="cart__totals">
+									<h4 class="cart__title">Корзина</h4>
+									<table>
+										<tbody class="cart__data_body">
+											<tr class="cart__data_line">
+												<th class="cart__title">Подытог</th>
+												<td><span class="cart-table__price_text">3 000 ₽</span></td>
+											</tr>
+											<tr class="cart__data_line shoping">
+												<th class="cart__title">Доставка</th>
+												<td>
+													<p class="cart__shipping_text">Введите свой адрес доставки что бы расчитать стоимость</p>
+													<a href="#" class="cart__shipping_btn">Расчитать стоимость</a>
+												</td>
+											</tr>
+											<tr class="cart__data_line">
+												<th class="cart__title">Итог</th>
+												<td><span class="cart-table__price_text">3 000 ₽</span></td>
+											</tr>
+										</tbody>
+									</table>
+									<a href="#" class="cart__data_btn btn">Оформление заказа <i class="_icon-arrow-right-btn"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				@@include('html/slider.htm',{})
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

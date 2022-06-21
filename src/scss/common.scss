@@ -34,6 +34,10 @@ h3 {
 	color: #000000;
 }
 
+input {
+	outline: none;
+}
+
 [class*="__container"] {
 	// border-left: 1px solid red;
 	// border-right: 1px solid red;
@@ -137,4 +141,95 @@ h3 {
 /* Checked */
 .form_radio input[type="radio"]:checked + label:before {
 	border: 2px solid #535353;
+}
+
+// Card product
+.card-product {
+	background: #ffffff;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	padding: 23px;
+
+	// .card-product__labels
+	&__labels {
+		position: absolute;
+		top: 11px;
+		left: 11px;
+		.sale {
+			background: #ff6161;
+			border-radius: 3px;
+			padding: 3px 7px;
+			font-size: rem(10);
+			line-height: math.div(14, 10);
+			color: #ffffff;
+		}
+		.new {
+			background: #44c44a;
+			border-radius: 3px;
+			padding: 3px 7px;
+			font-size: rem(10);
+			line-height: math.div(14, 10);
+			color: #ffffff;
+		}
+	}
+
+	// .card-product__img
+
+	&__img {
+		position: relative;
+		width: 100%;
+		img {
+			object-fit: contain;
+			width: inherit;
+		}
+	}
+
+	// .card-product__data
+
+	&__data {
+	}
+
+	// .card-product__btns
+
+	&__btns {
+		display: flex;
+		column-gap: 17px;
+	}
+
+	// .card-product__btn
+
+	&__btn {
+	}
+}
+.data-product {
+	padding: 8px 0;
+	// .data-product__title
+
+	&__title {
+		font-weight: 600;
+		font-size: rem(20);
+		line-height: math.div(27, 20);
+		margin-bottom: 6px;
+	}
+
+	// .data-product__price
+
+	&__price {
+		display: flex;
+		align-items: flex-end;
+		column-gap: 9px;
+	}
+}
+.price {
+	line-height: math.div(22, 16);
+}
+.old_price {
+	font-weight: 300;
+	font-size: rem(12);
+	line-height: math.div(16, 12);
+	color: #a3a3a3;
+	text-decoration: solid;
+	text-decoration: line-through;
 }
